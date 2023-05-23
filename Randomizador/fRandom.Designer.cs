@@ -46,7 +46,7 @@
             // lPS
             // 
             this.lPS.AutoSize = true;
-            this.lPS.Location = new System.Drawing.Point(250, 44);
+            this.lPS.Location = new System.Drawing.Point(77, 44);
             this.lPS.Name = "lPS";
             this.lPS.Size = new System.Drawing.Size(21, 13);
             this.lPS.TabIndex = 0;
@@ -55,7 +55,7 @@
             // lAtaque
             // 
             this.lAtaque.AutoSize = true;
-            this.lAtaque.Location = new System.Drawing.Point(470, 44);
+            this.lAtaque.Location = new System.Drawing.Point(337, 48);
             this.lAtaque.Name = "lAtaque";
             this.lAtaque.Size = new System.Drawing.Size(41, 13);
             this.lAtaque.TabIndex = 1;
@@ -64,7 +64,7 @@
             // lDefensa
             // 
             this.lDefensa.AutoSize = true;
-            this.lDefensa.Location = new System.Drawing.Point(250, 90);
+            this.lDefensa.Location = new System.Drawing.Point(613, 48);
             this.lDefensa.Name = "lDefensa";
             this.lDefensa.Size = new System.Drawing.Size(47, 13);
             this.lDefensa.TabIndex = 2;
@@ -73,7 +73,7 @@
             // lAtaEsp
             // 
             this.lAtaEsp.AutoSize = true;
-            this.lAtaEsp.Location = new System.Drawing.Point(470, 90);
+            this.lAtaEsp.Location = new System.Drawing.Point(65, 98);
             this.lAtaEsp.Name = "lAtaEsp";
             this.lAtaEsp.Size = new System.Drawing.Size(84, 13);
             this.lAtaEsp.TabIndex = 3;
@@ -82,7 +82,7 @@
             // lDefEsp
             // 
             this.lDefEsp.AutoSize = true;
-            this.lDefEsp.Location = new System.Drawing.Point(250, 140);
+            this.lDefEsp.Location = new System.Drawing.Point(294, 98);
             this.lDefEsp.Name = "lDefEsp";
             this.lDefEsp.Size = new System.Drawing.Size(90, 13);
             this.lDefEsp.TabIndex = 4;
@@ -91,7 +91,7 @@
             // lVeloc
             // 
             this.lVeloc.AutoSize = true;
-            this.lVeloc.Location = new System.Drawing.Point(470, 140);
+            this.lVeloc.Location = new System.Drawing.Point(564, 113);
             this.lVeloc.Name = "lVeloc";
             this.lVeloc.Size = new System.Drawing.Size(54, 13);
             this.lVeloc.TabIndex = 5;
@@ -105,45 +105,46 @@
             this.bRandom.TabIndex = 6;
             this.bRandom.Text = "Randomizar";
             this.bRandom.UseVisualStyleBackColor = true;
+            this.bRandom.Click += new System.EventHandler(this.bRandom_Click);
             // 
             // tPS
             // 
-            this.tPS.Location = new System.Drawing.Point(303, 44);
+            this.tPS.Location = new System.Drawing.Point(130, 44);
             this.tPS.Name = "tPS";
             this.tPS.Size = new System.Drawing.Size(85, 20);
             this.tPS.TabIndex = 7;
             // 
             // tAtaque
             // 
-            this.tAtaque.Location = new System.Drawing.Point(572, 41);
+            this.tAtaque.Location = new System.Drawing.Point(439, 45);
             this.tAtaque.Name = "tAtaque";
             this.tAtaque.Size = new System.Drawing.Size(85, 20);
             this.tAtaque.TabIndex = 8;
             // 
             // tDefensa
             // 
-            this.tDefensa.Location = new System.Drawing.Point(303, 83);
+            this.tDefensa.Location = new System.Drawing.Point(666, 41);
             this.tDefensa.Name = "tDefensa";
             this.tDefensa.Size = new System.Drawing.Size(85, 20);
             this.tDefensa.TabIndex = 9;
             // 
             // tAtaEsp
             // 
-            this.tAtaEsp.Location = new System.Drawing.Point(572, 83);
+            this.tAtaEsp.Location = new System.Drawing.Point(167, 91);
             this.tAtaEsp.Name = "tAtaEsp";
             this.tAtaEsp.Size = new System.Drawing.Size(85, 20);
             this.tAtaEsp.TabIndex = 10;
             // 
             // tDefEsp
             // 
-            this.tDefEsp.Location = new System.Drawing.Point(346, 140);
+            this.tDefEsp.Location = new System.Drawing.Point(390, 98);
             this.tDefEsp.Name = "tDefEsp";
             this.tDefEsp.Size = new System.Drawing.Size(85, 20);
             this.tDefEsp.TabIndex = 11;
             // 
             // tVeloc
             // 
-            this.tVeloc.Location = new System.Drawing.Point(572, 137);
+            this.tVeloc.Location = new System.Drawing.Point(666, 110);
             this.tVeloc.Name = "tVeloc";
             this.tVeloc.Size = new System.Drawing.Size(85, 20);
             this.tVeloc.TabIndex = 12;
