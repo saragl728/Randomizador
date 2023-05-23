@@ -35,12 +35,18 @@
             this.lDefEsp = new System.Windows.Forms.Label();
             this.lVeloc = new System.Windows.Forms.Label();
             this.bRandom = new System.Windows.Forms.Button();
+            this.tPS = new System.Windows.Forms.TextBox();
+            this.tAtaque = new System.Windows.Forms.TextBox();
+            this.tDefensa = new System.Windows.Forms.TextBox();
+            this.tAtaEsp = new System.Windows.Forms.TextBox();
+            this.tDefEsp = new System.Windows.Forms.TextBox();
+            this.tVeloc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lPS
             // 
             this.lPS.AutoSize = true;
-            this.lPS.Location = new System.Drawing.Point(314, 50);
+            this.lPS.Location = new System.Drawing.Point(250, 44);
             this.lPS.Name = "lPS";
             this.lPS.Size = new System.Drawing.Size(21, 13);
             this.lPS.TabIndex = 0;
@@ -49,7 +55,7 @@
             // lAtaque
             // 
             this.lAtaque.AutoSize = true;
-            this.lAtaque.Location = new System.Drawing.Point(402, 49);
+            this.lAtaque.Location = new System.Drawing.Point(470, 44);
             this.lAtaque.Name = "lAtaque";
             this.lAtaque.Size = new System.Drawing.Size(41, 13);
             this.lAtaque.TabIndex = 1;
@@ -58,7 +64,7 @@
             // lDefensa
             // 
             this.lDefensa.AutoSize = true;
-            this.lDefensa.Location = new System.Drawing.Point(306, 90);
+            this.lDefensa.Location = new System.Drawing.Point(250, 90);
             this.lDefensa.Name = "lDefensa";
             this.lDefensa.Size = new System.Drawing.Size(47, 13);
             this.lDefensa.TabIndex = 2;
@@ -67,7 +73,7 @@
             // lAtaEsp
             // 
             this.lAtaEsp.AutoSize = true;
-            this.lAtaEsp.Location = new System.Drawing.Point(402, 90);
+            this.lAtaEsp.Location = new System.Drawing.Point(470, 90);
             this.lAtaEsp.Name = "lAtaEsp";
             this.lAtaEsp.Size = new System.Drawing.Size(84, 13);
             this.lAtaEsp.TabIndex = 3;
@@ -76,7 +82,7 @@
             // lDefEsp
             // 
             this.lDefEsp.AutoSize = true;
-            this.lDefEsp.Location = new System.Drawing.Point(306, 140);
+            this.lDefEsp.Location = new System.Drawing.Point(250, 140);
             this.lDefEsp.Name = "lDefEsp";
             this.lDefEsp.Size = new System.Drawing.Size(90, 13);
             this.lDefEsp.TabIndex = 4;
@@ -85,7 +91,7 @@
             // lVeloc
             // 
             this.lVeloc.AutoSize = true;
-            this.lVeloc.Location = new System.Drawing.Point(416, 140);
+            this.lVeloc.Location = new System.Drawing.Point(470, 140);
             this.lVeloc.Name = "lVeloc";
             this.lVeloc.Size = new System.Drawing.Size(54, 13);
             this.lVeloc.TabIndex = 5;
@@ -93,18 +99,66 @@
             // 
             // bRandom
             // 
-            this.bRandom.Location = new System.Drawing.Point(344, 222);
+            this.bRandom.Location = new System.Drawing.Point(400, 222);
             this.bRandom.Name = "bRandom";
             this.bRandom.Size = new System.Drawing.Size(87, 27);
             this.bRandom.TabIndex = 6;
             this.bRandom.Text = "Randomizar";
             this.bRandom.UseVisualStyleBackColor = true;
             // 
+            // tPS
+            // 
+            this.tPS.Location = new System.Drawing.Point(303, 44);
+            this.tPS.Name = "tPS";
+            this.tPS.Size = new System.Drawing.Size(85, 20);
+            this.tPS.TabIndex = 7;
+            // 
+            // tAtaque
+            // 
+            this.tAtaque.Location = new System.Drawing.Point(572, 41);
+            this.tAtaque.Name = "tAtaque";
+            this.tAtaque.Size = new System.Drawing.Size(85, 20);
+            this.tAtaque.TabIndex = 8;
+            // 
+            // tDefensa
+            // 
+            this.tDefensa.Location = new System.Drawing.Point(303, 83);
+            this.tDefensa.Name = "tDefensa";
+            this.tDefensa.Size = new System.Drawing.Size(85, 20);
+            this.tDefensa.TabIndex = 9;
+            // 
+            // tAtaEsp
+            // 
+            this.tAtaEsp.Location = new System.Drawing.Point(572, 83);
+            this.tAtaEsp.Name = "tAtaEsp";
+            this.tAtaEsp.Size = new System.Drawing.Size(85, 20);
+            this.tAtaEsp.TabIndex = 10;
+            // 
+            // tDefEsp
+            // 
+            this.tDefEsp.Location = new System.Drawing.Point(346, 140);
+            this.tDefEsp.Name = "tDefEsp";
+            this.tDefEsp.Size = new System.Drawing.Size(85, 20);
+            this.tDefEsp.TabIndex = 11;
+            // 
+            // tVeloc
+            // 
+            this.tVeloc.Location = new System.Drawing.Point(572, 137);
+            this.tVeloc.Name = "tVeloc";
+            this.tVeloc.Size = new System.Drawing.Size(85, 20);
+            this.tVeloc.TabIndex = 12;
+            // 
             // fRandom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tVeloc);
+            this.Controls.Add(this.tDefEsp);
+            this.Controls.Add(this.tAtaEsp);
+            this.Controls.Add(this.tDefensa);
+            this.Controls.Add(this.tAtaque);
+            this.Controls.Add(this.tPS);
             this.Controls.Add(this.bRandom);
             this.Controls.Add(this.lVeloc);
             this.Controls.Add(this.lDefEsp);
@@ -128,6 +182,12 @@
         private System.Windows.Forms.Label lDefEsp;
         private System.Windows.Forms.Label lVeloc;
         private System.Windows.Forms.Button bRandom;
+        private System.Windows.Forms.TextBox tPS;
+        private System.Windows.Forms.TextBox tAtaque;
+        private System.Windows.Forms.TextBox tDefensa;
+        private System.Windows.Forms.TextBox tAtaEsp;
+        private System.Windows.Forms.TextBox tDefEsp;
+        private System.Windows.Forms.TextBox tVeloc;
     }
 }
 
