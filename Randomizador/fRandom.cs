@@ -28,6 +28,8 @@ namespace Randomizador
                 int ataEsp = Convert.ToInt32(tAtaEsp);
                 int defEsp = Convert.ToInt32(tDefEsp);
                 int velocidad = Convert.ToInt32(tVeloc);
+                int[] estadisticas = new int[6];    //array de los stats nuevos
+
                 //añado excepciones
                 if (salud <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
                 if (ataque <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
@@ -35,6 +37,11 @@ namespace Randomizador
                 if (ataEsp <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
                 if (defEsp <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
                 if (velocidad <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
+                // se hace el randomizado
+                estadisticas = Calculo.RandomizarStats(salud, ataque, defensa, ataEsp, defEsp, velocidad);
+
+                //se muestran los stats randomizados
+                MessageBox.Show($"Los nuevos stats son:\nPS: {estadisticas[0]}\nAtaque: {estadisticas[1]}\nDefensa: {estadisticas[2]}\nAtaque Especial: {estadisticas[3]}\nDefensa Especial: {estadisticas[4]}\nVelocidad: {estadisticas[5]}", "Resultado del randomizado", MessageBoxButtons.OK);
             }
             catch (FormatException error)
             {
