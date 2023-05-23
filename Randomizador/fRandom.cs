@@ -22,12 +22,12 @@ namespace Randomizador
             try
             {
                 //declaro variables
-                int salud = Convert.ToInt32(tPS);
-                int ataque = Convert.ToInt32(tAtaque);
-                int defensa = Convert.ToInt32(tDefensa);
-                int ataEsp = Convert.ToInt32(tAtaEsp);
-                int defEsp = Convert.ToInt32(tDefEsp);
-                int velocidad = Convert.ToInt32(tVeloc);
+                int salud = Convert.ToInt32(tPS.Text);
+                int ataque = Convert.ToInt32(tAtaque.Text);
+                int defensa = Convert.ToInt32(tDefensa.Text);
+                int ataEsp = Convert.ToInt32(tAtaEsp.Text);
+                int defEsp = Convert.ToInt32(tDefEsp.Text);
+                int velocidad = Convert.ToInt32(tVeloc.Text);
                 int[] estadisticas = new int[6];    //array de los stats nuevos
 
                 //añado excepciones
