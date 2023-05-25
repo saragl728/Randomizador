@@ -37,6 +37,7 @@ namespace Randomizador
                 if (ataEsp <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
                 if (defEsp <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
                 if (velocidad <= 0) throw new Exception("Los stats tienen que ser superiores a 0");
+                if ((salud + ataque + defensa + ataEsp + defEsp + velocidad) > 1530) throw new Exception("La suma de stats es demasiado grande para el Randomizado");
                 // se hace el randomizado
                 estadisticas = Calculo.RandomizarStats(salud, ataque, defensa, ataEsp, defEsp, velocidad);
 
